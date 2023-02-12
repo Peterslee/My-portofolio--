@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Caviar+Dreams&display=swap" rel="stylesheet">
+   
+  <link rel="stylesheet" href="style.css">
+  <title>SASTRA</title>
+  
+<style>
+  /* Add your custom CSS below */
+  .jumbotron {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    height: 400px;
+  }
+
+  .jumbotron h1 {
+    font-weight: bold;
+    color: white;
+  }
+
+  .jumbotron p {
+    font-size: 18px;
+    color: white;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #333;
+}
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+#navba{
+  background-color: #093341;
+  font-weight: bold
+}
+.navbar a {
+        color: white !important;
+      }
+.navbar-brand {
+        font-size: px;
+      }
+.navbar-brand:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+      }
+.navbar a {
+        color: white !important;
+        font-family: 'Caviar Dreams', sans-serif;
+      }
+      .navbar-brand {
+        font-family: 'Caviar Dreams', sans-serif;
+      }
+.carousel-caption h5,p{
+  color:  #093341;
+}
+.container{
+  border-bottom: 1px solid #093341;
+  padding-bottom: 15px;
+  letter-spacing: px;
+  margin-bottom: 200px;
+}
+.progress-bar {
+  background-color: #1877f2;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
+.btn-print {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-print:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #337ab7;
+  margin: 20px auto;
+}
+
+#circle1 {
+  
+}
+
+#circle2 {
+  
+}
+
+#circle3 {
+  
+}
+.medsos {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 20px auto;
+}
+.medsos img{
+  width: 100%;
+}
+.progress-bar{
+  background-color: #093341;
+}
+.btn{
+  background-color: #093341;
+  color: white;
+}
+.navbar-toggler{
+  background-color: white;
+}
+footer{
+  background-color: #093341;
+}
+footer .lead{
+ letter-spacing: 2px;
+ font-size: 10px;
+ color: white;
+}
+
+
+</style>
+
+  
+</head>
+<body>
+  <header>
+    <nav id="navba" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">Sastra Frayogi </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Gambar/Java.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <!--<h5>Java</h5>
+          <p> Sololearn September 23, 2022</p>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Gambar/Javascript.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <!--<h5>JavaScript</h5>
+          <p>March 26, 2021</p>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Gambar/Responsive_css.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+                    <!--<h5>Responsiv & CSS</h5>
+          <p>November 20, 2021</p>-->
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+  </div>
+
+  <!-- Content -->
+  
+</body>
+
+<div class="welcome container mt-5">
+  <h1 class="display-4">Welcome to My Portfolio</h1>
+  <p class="lead typed-text"></p>
+  <span class="typed"></span>
+</div>
+
+
+  <section id="about">
+    <div class="container my-5">
+      <h2 class="text-center lead typed-text display-4">About Me</h2>
+      <p class="lead typed-text">My passion for building digital products is shaped by having the mindset of putting humans in the center of attention; to ensure the product team is solving the right problem for the people.
+
+My programming process is backed-up with the iterative approach of user research, problem definition, hypotheses creations, prototyping, and testing.
+
+My strong focus is on discovery research and building design concepts that will enable organizations in defining a new strategy or product opportunities to help the business gain its competitive advantage.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container mt-5">
+  <h2 class="lead typed-text display-4">My Projects</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="card mb-3 fade-in">
+        <img src="Gambar/daftar-mahasiswa.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Daftar Mahasiswa</h5>
+          <p class="card-text">Daftar Mahasiswa using that technology bootstrap and php</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="card mb-3 fade-in">
+        <img src="Gambar/Design.jpg" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Design App</h5>
+          <p class="card-text">Market place Distro website design using Photoshop and figma</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="card mb-3 fade-in">
+        <img src="Gambar/inventaris.png" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Daftar Inventaris barang</h5>
+          <p class="card-text">Daftar Inventaris barang using bootstrap and php technology </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</ddi
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container mt-5">
+  <h2 class="lead typed-text display-4">My Skills</h2>
+  <p class="lead typed-text">Here's a summary of my skills and expertise:</p>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h3>HTML</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>CSS</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h3>JavaScript</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h3>jQuery</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h3>Java</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h3>Bootstrap</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h3>Php</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+    <a href="#" class="btn" onclick="window.print()">Print CV</a>
+  </div>
+</div>
+
+<!--<div class="container mt-5">
+  <div class="row">
+    <div class="col-4">
+      <div class="circle" id="circle1"><img src="Gambar/Poto1.jpg"></div>
+    </div>
+    <div class="col-4">
+      <div class="circle" id="circle2"><img src="Gambar/Poto2.jpg"></div>
+    </div>
+    <div class="col-4">
+      <div class="circle" id="circle3"><img src="Gambar/Poto3.jpg"></div>
+    </div>
+  </div>
+</div>-->
+
+
+
+  <section id="contact">
+    <div class="container my-5">
+      <h2 class="text-center lead typed-text display-4">Contact Me</h2>
+      
+      <div class="row">
+    <div class="col-4">
+      <div class="medsos" id="circle1"><a href="https://www.facebook.com/lana.fauziah.965?mibextid=ZbWKwL"><img src="Gambar/facebook.png"></a></div>
+    </div>
+    <div class="col-4">
+      <div class="medsos" id="circle2"><a href="mailto:sastrafrayogi@gmail.com"><img src="Gambar/email.png"></a></div>
+    </div>
+    <div class="col-4">
+      <div class="medsos" id="circle3"><a href="https://instagram.com/phetersly.37?igshid=YmMyMTA2M2Y="><img src="Gambar/instagram.png"></a></div>
+    </div>
+    <div class="col-4">
+      <div class="medsos" id="circle2"><a href="https://wa.me/6287763339243"><img src="Gambar/whatsapp.png"></a></div>
+    </div>
+    <div class="col-4">
+      <div class="medsos" id="circle2"><a href="https://www.linkedin.com/in/sastra-frayogi-623a6821a"><img src="Gambar/linkedin.png"></a></div>
+    </div>
+    <div class="col-4">
+      <div class="medsos" id="circle2"><a href="https://github.com/Peterslee"><img src="Gambar/github.png"></a></div>
+    </div>
+  </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-
+control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p class="lead typed-text">Copyright &copy; sastrafrayogi@gmail.com 2021</p>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  
+  <script>
+  // Add your JavaScript below
+  $(document).ready(function(){
+    $('.jumbotron').fadeIn(3000);
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+  let cards = document.querySelectorAll(".fade-in");
+
+  window.onscroll = function() {
+    let top = window.pageYOffset + window.innerHeight;
+
+    for (let i = 0; i < cards.length; i++) {
+      let cardTop = cards[i].offsetTop;
+
+      if (top > cardTop) {
+        cards[i].style.opacity = 1;
+      }
+    }
+  };
+});
+var typed = new Typed('.typed', {
+    strings: ['Hi, I m Sastra Frayogi','I m a Web Developer and  java programmers', 'with a strong focus on problem solving and innovation.'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true
+  });
+</script>
+
+  
+</body>
+</html>
